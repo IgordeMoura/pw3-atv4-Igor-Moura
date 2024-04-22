@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Form from './Components/form/Form';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Form></Form>
     </div>
   );

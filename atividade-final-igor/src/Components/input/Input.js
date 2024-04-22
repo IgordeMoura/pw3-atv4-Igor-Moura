@@ -1,7 +1,7 @@
 function Input({type, text, name, placeholder, handlerOnChange, value}){
     return(
 
-        <div >
+        <div className='input'>
 
             <label htmlFor={name}>{text}</label>
 

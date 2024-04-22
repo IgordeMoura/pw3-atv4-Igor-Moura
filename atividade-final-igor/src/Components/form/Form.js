@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import style from './Form.module.css'
 import Input from '../input/Input';
 import Select from '../select/Selec'
 
@@ -86,7 +87,7 @@ function Form() {
 
 
     return(
-        <section>
+        <section className={style.containerFormulario}>
 
             <h1>Cadastro de Alunos</h1>
 
@@ -96,12 +97,12 @@ function Form() {
                     type='text'
                     name='nome_aluno'
                     id='nome_aluno'
-                    placeholder='digite o nome do aluno'
-                    text='digite o nome do aluno'
+                    placeholder='digite aqui'
+                    text='Digite o nome do aluno'
                     handlerOnChange={handlerChangeStudent}
                     />
                 
-                <Select
+                <Select 
                     name='sigla'
                     text='Sigla'
                     options={modules}
@@ -109,7 +110,7 @@ function Form() {
                 />
 
                 <p>
-                    <input type='submit' value='Cadastrar Aluno'/>
+                    <input id={style.buttonEnviar} type='submit' value='Cadastrar Aluno'/>
                 </p>
 
             </form>
