@@ -1,20 +1,28 @@
 {
-    "students": [],
-
-    "module":[
-        {
-            "cod_turma" : 1,
-            "sigla": "1° DS"
-        },
-    
-        {
-            "cod_turma" : 2,
-            "sigla": "2° DS"
-        },
-
-        {
-            "cod_turma" : 3,
-            "sigla": "3° DS"
-        }
-    ]
+  "students": [
+    {
+      "id": "b4af",
+      "modules": {
+        "id": "3",
+        "modules": "3° DS"
+      }
+    }
+  ],
+  "module": [
+    {
+      "cod_turma": 1,
+      "sigla": "1° DS",
+      "id": "2ab6"
+    },
+    {
+      "cod_turma": 2,
+      "sigla": "2° DS",
+      "id": "b7d5"
+    },
+    {
+      "cod_turma": 3,
+      "sigla": "3° DS",
+      "id": "ff4a"
+    }
+  ]
 }

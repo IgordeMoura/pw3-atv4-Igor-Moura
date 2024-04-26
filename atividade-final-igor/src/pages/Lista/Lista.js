@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
-import style from './Form.module.css'
-import Input from '../input/Input';
-import Select from '../select/Selec'
+import {useNavigate} from 'react-router-dom'
+import style from './Lista.module.css'
+import Input from '../../Components/form/input/Input';
+import Select from '../../Components/form/select/Selec';
 
-function Form() {
+function Cadastro() {
+
+    const navigate = useNavigate();
     
     const [modules, setModules] = useState([]);
 
@@ -69,6 +72,7 @@ function Form() {
         .then(
             (data)=>{
                 console.log(data);
+                navigate ('/lista', {state: 'Livro Cadastrado com Sucesso!'});
             }
         )
         .catch(
@@ -112,7 +116,7 @@ function Form() {
                 <p>
                     <input id={style.buttonEnviar} type='submit' value='Cadastrar Aluno'/>
                 </p>
-
+ 
             </form>
         </section>
     )
@@ -120,7 +124,7 @@ function Form() {
 
 
 
-export default Form;
+export default Cadastro;
 
 
 
