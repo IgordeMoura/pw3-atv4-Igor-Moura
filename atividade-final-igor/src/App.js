@@ -10,10 +10,11 @@ import Container from './Components/Container/Container';
 import Home from './pages/Home/Home';
 import Cadastro from './pages/Cadastro/Cadastro';
 import Lista from './pages/Lista/Lista';
+import Editar from './pages/Editar/Editar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
 
       <BrowserRouter>
 
@@ -24,8 +25,9 @@ function App() {
             <Route path='/' element={<Navbar/>}>
                   
               <Route index element={<Home/>}/>
-              <Route path='/Cadastro' element={<Cadastro/>}/>
-              <Route path='/Lista' element={<Lista/>}/>
+              <Route path='/cadastro' element={<Cadastro/>}/>
+              <Route path='/lista' element={<Lista/>}/>
+              <Route path='/editar/:id' element={<Editar/>}/>
                   
             </Route>
 

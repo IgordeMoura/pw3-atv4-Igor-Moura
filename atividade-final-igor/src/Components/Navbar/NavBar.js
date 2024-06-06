@@ -6,25 +6,24 @@ function Navbar (){
 
     return(
         <>
-            <Container>
+                <div className={Styles.teste}>
+                    
+                    <ul className={Styles.list}>
+                        <p> <span>>.</span> | TecDev</p>
+                        <li className={Styles.item}>
+                            <Link to='/'>Home</Link>
+                        </li>
 
-                <ul className={Styles.list}>
+                        <li className={Styles.item}>
+                            <Link to='/Cadastro'>Cadastro</Link>
+                        </li>
 
-                    <li className={Styles.item}>
-                        <Link to='/'>Home</Link>
-                    </li>
+                        <li className={Styles.item}>
+                            <Link to='/Lista'>Lista</Link>
 
-                    <li className={Styles.item}>
-                        <Link to='/Cadastro'>Cadastro</Link>
-                    </li>
-
-                    <li className={Styles.item}>
-                        <Link to='/Lista'>Lista</Link>
-
-                    </li>
-                </ul>    
-
-            </Container>  
+                        </li>
+                    </ul>    
+                </div>
 
             <Outlet/>
             

@@ -1,25 +1,25 @@
-.book_card{
-    width: 100%;
-    margin: 0.5%;
+.student_card{
+    display: flex;
+    gap: 25%;
+    width: 50vw;
+    height: 5vh;
+    justify-content: center;
+    margin-bottom: 1%;
     padding: 1em;
-    border: 1px solid #7a7a7a;
-    border-radius: 5px;
+    border: 0.5px solid #7a7a7a;
+    border-radius: 25px;
 }
 
-.book_card > h4{
-    background-color: #222;
-    color: #ffbb33;
-    padding: 0.4em;
-    margin-bottom: 1.3em;
-    font-size: 1.3em;
+.student_card > p{
+    color: #161616;
+    width: 15%;
+    height: 50%;
+    font-size: large;
+    justify-content: center;
+    
 }
 
-.book_card > p{
-    color: #7a7a7a;
-    margin-bottom: 1em;
-}
-
-.book_card p > span{
+.student_card p > span{
     font-weight: bold;
 }
 
@@ -36,4 +36,35 @@
     height: 12px;
     margin-right: 5px;
     border-radius: 50%;
+}
+
+.botoes{
+    display: flex;
+    width: 35%;
+    gap: 10%;
+    justify-content: center;
+}
+
+.botoes button{
+    width: 25%;
+    height: 100%;
+    border-radius: 25px;
+    border: 0;
+}
+.excluir{
+    color: #ffffff;
+    background-color: #b46169; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.editar{
+    background-color: rgb(84, 84, 194);
+}
+
+.editar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }

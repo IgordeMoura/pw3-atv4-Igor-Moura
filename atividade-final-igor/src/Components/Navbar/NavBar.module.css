@@ -5,15 +5,42 @@
     justify-content: space-between;
 }
 
-.item{
-    margin-right: 1em;
+.list p{
+    margin-right: 55px;
+    font-size: 35px;
+    padding: 0px 15px;
+    border-radius: 25px;
+    border: 1px #000000 solid;
 }
+.list span{
+    font-size: 35px;
+    color: rgb(187, 78, 209);
+    font-weight: bolder;
+}
+
+.item{
+    margin-right: 2.5em;
+}
+
 
 .item a{
     color: #000000;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .item a:hover{
-    color: #7733ff;
+    transition: 0.5s;
+    border-bottom: 3.5px rgb(128, 13, 151) solid ;
+    padding: 5px;
+    padding: 5px 25px 5px 10px;
+    color: rgb(128, 13, 151);
+    font-weight: bolder;
+}
+
+.teste{
+    display: flex;
+    height: 15%;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
 }

@@ -1,19 +1,40 @@
 .message{
-    width: 100%;
-    padding: 1em;
-    border: 1px solid #000;
+    position: absolute;
+    top: 25%;
+    right: 16.85%;
+    width: 15%;
+    padding: 0.5em;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 2em;
-    border-radius: 5px;
+    border-radius: 30px 0px 0px 0px;
+    animation: surgimento 0.7s ease-in-out;
 }
 
 .success{
-    color: #155724;
-    background-color: #c3e6cb;
+    top: 25%;
+    right: 16.85%;
+    font-size: large;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #079145;
+    animation: surgimento 0.7s ease-in-out;
 }
 
 .error{
-    color: #721C24;
-    background-color: #F5C6CB;
+    top: 25%;
+    right: 16.85%;
+    font-size: large;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #a53641;
+    animation: surgimento 0.7s ease-in-out;
 }
+
+
+@keyframes surgimento {
+  100% { transform:  translateX(0); opacity: 100%;}
+  50% {opacity: 0%;}
+  0% { transform: translateX(105%); opacity: 0%; }
+}
+

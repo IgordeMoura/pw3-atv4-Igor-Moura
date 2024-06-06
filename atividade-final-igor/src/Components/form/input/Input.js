@@ -1,11 +1,10 @@
 function Input({type, text, name, placeholder, handlerOnChange, value}){
     return(
 
-        <div className='input'>
+        <div>
 
-            <label htmlFor={name}>{text}</label>
-
-            <input
+            <label htmlFor={name} >{text}</label>
+            <input style={{margin: '20px 0 50px 0'}}
                 type={type}
                 name={name}
                 placeholder={placeholder}

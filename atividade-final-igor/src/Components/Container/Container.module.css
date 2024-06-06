@@ -1,11 +1,13 @@
 .container{
-    width: 1200px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    flex-wrap: wrap;
+    align-items: center;
+    width: 65vw;
+    height: 75vh;
+    box-shadow: 5px 5px 20px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 6.5%;
 }
 
 .min_height{

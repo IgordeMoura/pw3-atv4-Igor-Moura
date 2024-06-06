@@ -2,23 +2,25 @@ import style from './Home.module.css'
 import Input from '../../Components/form/input/Input';
 import Select from '../../Components/form/select/Selec';
 
+import Imagem from '../../img/Developer activity-pana.png'
+
 function Cadastro() {
 
     return(
-        <section className={style.containerFormulario}>
+        <div className={style.containerHome}>
+            <div className={style.conteudo}>
+                <h1>Olá, Seja Bem Vindo</h1>
+                <p> Aproveite para Navegar Por Nossas Paginas</p>
+                <button>Navegue</button>
+            </div>
 
-            <h1>Olá, Seja Bem Vindo</h1>
+            <div className={style.conteudo}>
+                <img src={Imagem}/>
+            </div>
 
-        </section>
+        </div>
     )
 }
 
 
-
-export default Cadastro;
-
-
-
-
-
-    
+export default Cadastro; 
